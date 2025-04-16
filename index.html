@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestionAr</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <ul>
+                <li class="left-logo">
+                    <img class="logo" src="img/logoGestionar.png"
+                         alt="logo" />
+                </li>
+                <li class="left-logo">
+                    <h2 class="h2">GestionAR</h2>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+                <li>
+                    <a href="#noticias">Noticias</a>
+                </li>
+                <li>
+                    <a href="#ventajas">Ventajas</a>
+                </li>
+                <li>
+                    <a href="/Login">Ingresar/Registrarse</a>
+                </li>
+            </ul>
+    </header>
+    <main>
+        <!-- Portada -->
+        <div class="portada">
+            <img src="img/portada.jpg" alt="portada">
+        </div>
+        <div class="servicios">
+            <h1>Nuestros Servicios</h1>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-container reveal">
+
+            <div class="card">
+                <img src="img/medicos.jpg" alt="Card 1" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Medicina</h3>
+                    <p class="card-text">Todas las especialidades disponibles.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/urgencias.jpg" alt="Card 2" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Urgencias</h3>
+                    <p class="card-text">Servicio de urgencias disponibles 24/7.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/farmacia.jpg" alt="Card 3" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Farmacia</h3>
+                    <p class="card-text">Contamos con servicio de farmacia.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ventajas -->
+        <div class="ventajas-container reveal" id="ventajas">
+            <div class="ventajas-imagen">
+                <img src="img/ventajas.jpg" alt="ventajas">
+            </div>
+            <div class="ventajas-texto">
+                <h1 class="ventajas">Ventajas</h1>
+                <p>Nuestra plataforma ofrece una solución integral para la gestión de turnos médicos, brindando una experiencia eficiente tanto para pacientes como para profesionales de la salud.</p>
+                <ul class="ventajas-lista">
+                    <li>Gestión de turnos simplificada</li>
+                    <li>Acceso 24/7 desde cualquier dispositivo</li>
+                    <li>Recordatorios automáticos</li>
+                    <li>Historial médico digitalizado</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Noticias -->
+        <h1 class="noticias reveal">Noticias</h1>
+        <div class="noticias-container reveal" id="noticias">
+            <div class="noticias-card">
+                <div class="card-content">
+                    <h3>CONSULTORIOS MÁS CERCANOS</h3>
+                    <p>Consulta por tu consultorio más cercano.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7080.839363337465!2d-59.00589693760377!3d-27.456190823519265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1599654025043!5m2!1ses!2sar"
+                        class="map"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="noticias-card">
+                <div class="card-content">
+                    <h3>SOLICITAR TURNO</h3>
+                    <img src="img/turno.jpg" alt="Solicitar turno" class="turno-imagen">
+                    <h4 style="text-align: center;">¿Cómo solicitar turno?</h4>
+                    <p>¡Creá un usuario y ya podés sacar turno!</p>
+                    <button class="registro-btn">Registrarse</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacto-container reveal" id="contacto">
+            <h2>Dejanos tu consulta</h2>
+            <form class="contacto-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa tu telefono">
+                
+                <div class="checkbox-group">
+                    <p>¿Sobre qué te gustaría consultar?</p>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="turnos" name="consulta" value="turnos">
+                        <label for="turnos">Turnos médicos</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="registro" name="consulta" value="registro">
+                        <label for="registro">Cómo registrarse</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="especialidades" name="consulta" value="especialidades">
+                        <label for="especialidades">Especialidades médicas</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="urgencias" name="consulta" value="urgencias">
+                        <label for="urgencias">Servicio de urgencias</label>
+                    </div>
+                </div>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required placeholder="Ingresa tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>GestionAR</p>
+        <p>Tel: 17522</p>
+        <p>
+            email: <a href="mailto:gestionar@gmail.com">gestionar@gmail.com</a>
+        </p>
+        <p>© 2023 GestionAR. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+</body>
+</html>
