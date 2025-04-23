@@ -420,61 +420,95 @@ footer a {
 
 /*Responsive checkpoints*/
 
+/* Responsive checkpoints */
 @media (max-width: 1024px) {
-    .cards-container {
-        width: 95%;
-        gap: 24px;
-        padding: 24px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ventajas-container, .noticias-container {
+        grid-template-columns: 1fr; /* Diseño de una sola columna */
+        gap: 20px;
+    }
+
+    .ventajas-imagen img, .turno-imagen {
+        max-width: 100%; /* Asegurar que las imágenes usen el ancho disponible */
+    }
+
+    .contacto-container {
+        width: 90%; /* Reducir contenedor de formulario */
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    header .left-logo h2 {
+        font-size: 20px; /* Ajustar el tamaño del logo */
+    }
+
     .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        gap: 20px;
+        grid-template-columns: 1fr; /* Mostrar tarjetas en una sola columna */
         padding: 16px;
-    }
-
-    .card {
-        grid-template-rows: 180px 1fr;
-    }
-
-    .card-content {
-        padding: 20px;
-    }
-
-    .card-title {
-        font-size: 18px;
-    }
-
-    .card-text {
-        font-size: 14px;
-    }
-
-    .ventajas-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .ventajas-imagen img {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 360px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-        width: 85%;
-        gap: 16px;
     }
 
     .card {
         grid-template-rows: 160px 1fr;
     }
 
-    .card-content {
-        padding: 16px;
+    .card-title {
+        font-size: 18px;
+    }
+
+    .ventajas-container {
+        padding: 20px;
+    }
+
+    .contacto-container {
+        max-width: 400px; /* Formulario más compacto */
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    header {
+        padding: 10px 0; /* Reducir el espacio del encabezado */
+    }
+
+    header ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header li {
+        padding: 10px; /* Reducir espaciado */
+    }
+
+    .portada img {
+        height: auto; /* Ajustar altura automáticamente */
+    }
+
+    .cards-container, .ventajas-container, .contacto-container {
+        width: 100%; /* Usar 100% del ancho disponible */
+        padding: 10px;
+    }
+
+    .card {
+        grid-template-rows: 140px 1fr;
     }
 
     .card-title {
@@ -482,6 +516,14 @@ footer a {
     }
 
     .card-text {
+        font-size: 14px;
+    }
+
+    .contacto-form input, .contacto-form textarea {
+        width: 90%; /* Ajustar ancho de los inputs */
+    }
+
+    footer {
         font-size: 14px;
     }
 }
