@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GestionAr</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/dc69ac21c4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
@@ -29,7 +30,7 @@
                     <a href="#ventajas">Ventajas</a>
                 </li>
                 <li>
-                    <a href="/Login">Ingresar/Registrarse</a>
+                    <a href="login.html">Ingresar/Registrarse</a>
                 </li>
             </ul>
     </header>
@@ -109,7 +110,8 @@
                     <img src="img/turno.jpg" alt="Solicitar turno" class="turno-imagen">
                     <h4 style="text-align: center;">¿Cómo solicitar turno?</h4>
                     <p>¡Creá un usuario y ya podés sacar turno!</p>
-                    <button class="registro-btn">Registrarse</button>
+                    <button class="registro-btn" onclick="window.location.href = 'login.html'"
+                    >Registrarse</button>
                 </div>
             </div>
         </div>
@@ -156,11 +158,18 @@
 
     <footer>
         <p>GestionAR</p>
-        <p>Tel: 17522</p>
         <p>
+            <i class="fa-solid fa-phone"></i>
+            Tel: 17522
+        </p>
+        <p>
+            <i class="fa-regular fa-envelope"></i>
             email: <a href="mailto:gestionar@gmail.com">gestionar@gmail.com</a>
         </p>
-        <p>© 2023 GestionAR. Todos los derechos reservados.</p>
+        <p>
+            <i class="fa-regular fa-copyright"></i>
+            2023 GestionAR. Todos los derechos reservados.
+        </p>
     </footer>
 
     <script src="js/scroll.js"></script>
