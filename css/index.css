@@ -419,8 +419,6 @@ footer a {
 }
 
 /*Responsive checkpoints*/
-
-/* Responsive checkpoints */
 @media (max-width: 1024px) {
     header ul {
         display: flex;
@@ -429,16 +427,16 @@ footer a {
     }
 
     .ventajas-container, .noticias-container {
-        grid-template-columns: 1fr; /* Diseño de una sola columna */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .ventajas-imagen img, .turno-imagen {
-        max-width: 100%; /* Asegurar que las imágenes usen el ancho disponible */
+        max-width: 100%;
     }
 
     .contacto-container {
-        width: 90%; /* Reducir contenedor de formulario */
+        width: 90%;
         padding: 20px;
     }
 
@@ -453,11 +451,11 @@ footer a {
     }
 
     header .left-logo h2 {
-        font-size: 20px; /* Ajustar el tamaño del logo */
+        font-size: 20px;
     }
 
     .cards-container {
-        grid-template-columns: 1fr; /* Mostrar tarjetas en una sola columna */
+        grid-template-columns: 1fr;
         padding: 16px;
     }
 
@@ -474,18 +472,42 @@ footer a {
     }
 
     .contacto-container {
-        max-width: 400px; /* Formulario más compacto */
+        max-width: 400px;
     }
 
     footer {
         font-size: 16px;
         padding: 1.5rem;
     }
+
+    .noticias-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 20px; /* Reducir espacio entre tarjetas */
+        padding: 16px; /* Reducir el padding del contenedor */
+        width: 90%; /* Ajustar ancho del contenedor */
+    }
+
+    .noticias-card {
+        padding: 16px; /* Reducir espacio interno en las tarjetas */
+    }
+
+    .noticias-card h3 {
+        font-size: 20px; /* Reducir tamaño del título */
+    }
+
+    .noticias-card h4, .noticias-card p {
+        font-size: 14px; /* Reducir tamaño del texto */
+        text-align: center; /* Mantener el texto legible */
+    }
+
+    .map {
+        height: 250px; /* Reducir tamaño del mapa */
+    }
 }
 
 @media (max-width: 360px) {
     header {
-        padding: 10px 0; /* Reducir el espacio del encabezado */
+        padding: 10px 0;
     }
 
     header ul {
@@ -495,15 +517,15 @@ footer a {
     }
 
     header li {
-        padding: 10px; /* Reducir espaciado */
+        padding: 10px;
     }
 
     .portada img {
-        height: auto; /* Ajustar altura automáticamente */
+        height: auto;
     }
 
     .cards-container, .ventajas-container, .contacto-container {
-        width: 100%; /* Usar 100% del ancho disponible */
+        width: 100%;
         padding: 10px;
     }
 
@@ -520,10 +542,33 @@ footer a {
     }
 
     .contacto-form input, .contacto-form textarea {
-        width: 90%; /* Ajustar ancho de los inputs */
+        width: 90%;
     }
 
     footer {
         font-size: 14px;
+    }
+
+    .noticias-container {
+        gap: 16px; /* Espacio reducido entre tarjetas */
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 10px; /* Reducir padding */
+    }
+
+    .noticias-card {
+        padding: 12px; /* Menos padding en la tarjeta */
+        box-shadow: none; /* Simplificar el diseño para móviles */
+    }
+
+    .noticias-card h3 {
+        font-size: 18px; /* Texto del título más pequeño */
+    }
+
+    .noticias-card h4, .noticias-card p {
+        font-size: 12px; /* Reducir el tamaño del texto */
+    }
+
+    .map {
+        height: 200px; /* Reducir aún más el tamaño del mapa */
     }
 }
