@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
     <link rel="icon" href="img/logoGestionar.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/dc69ac21c4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -33,31 +35,76 @@
 
         <div class="login-container">
             <!--- Carrousel de imagenes -->
-            <div class="carousel">
 
-                <button class="prev">«</button>
-                <div class="carousel-images">
-                    <img src="img/farmacia.jpg" alt="Imagen 1" />
-                    <img src="img/medicos.jpg" alt="Imagen 2" />
-                    <img src="img/urgencias.jpg" alt="Imagen 3" />
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
                 </div>
-                <button class="next">»</button>
-                <script src="js/carousel.js"></script>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/medicos.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/urgencias.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/farmacia.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-
-            <div>
-                <form class="login-form">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
-                    <button type="submit">Iniciar Sesión</button>
+            <!--- login form -->
+            <div class="login-form">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su usuario">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
+                       <a href="" class="registro"> <!-- agregar funcionalidad de olvide contraseña-->
+                            ¿Has olvidado tu contraseña?
+                        </a>
+                        <a href="" class="registro">
+                            ¿Aún no te registraste? <!-- agregar pagina registro-->
+                        </a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                    <p>O inicia sesión con</p>
+                    <div class="d-flex justify-content-around">
+                        <ul>
+                            <li>
+                                <a href="" class="google">
+                                    <i class="fa-brands fa-google"></i>
+                                    Sign in with Google
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fb">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                    Sign in with Facebook
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </form>
-            </div>
 
+            </div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     </main>
 </body>
 </html>
