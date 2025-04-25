@@ -106,6 +106,13 @@
     border-radius: 5px;
 }
 
+.login-form ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 /* Responsive Design */
