@@ -481,27 +481,27 @@ footer a {
     }
 
     .noticias-container {
-        grid-template-columns: 1fr; /* Una sola columna */
-        gap: 20px; /* Reducir espacio entre tarjetas */
-        padding: 16px; /* Reducir el padding del contenedor */
-        width: 90%; /* Ajustar ancho del contenedor */
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 16px;
+        width: 90%;
     }
 
     .noticias-card {
-        padding: 16px; /* Reducir espacio interno en las tarjetas */
+        padding: 16px;
     }
 
     .noticias-card h3 {
-        font-size: 20px; /* Reducir tamaño del título */
+        font-size: 20px;
     }
 
     .noticias-card h4, .noticias-card p {
-        font-size: 14px; /* Reducir tamaño del texto */
-        text-align: center; /* Mantener el texto legible */
+        font-size: 14px;
+        text-align: center;
     }
 
     .map {
-        height: 250px; /* Reducir tamaño del mapa */
+        height: 250px;
     }
 }
 
@@ -550,25 +550,25 @@ footer a {
     }
 
     .noticias-container {
-        gap: 16px; /* Espacio reducido entre tarjetas */
-        width: 100%; /* Ocupa todo el ancho */
-        padding: 10px; /* Reducir padding */
+        gap: 16px;
+        width: 100%;
+        padding: 10px;
     }
 
     .noticias-card {
-        padding: 12px; /* Menos padding en la tarjeta */
-        box-shadow: none; /* Simplificar el diseño para móviles */
+        padding: 12px;
+        box-shadow: none;
     }
 
     .noticias-card h3 {
-        font-size: 18px; /* Texto del título más pequeño */
+        font-size: 18px;
     }
 
     .noticias-card h4, .noticias-card p {
-        font-size: 12px; /* Reducir el tamaño del texto */
+        font-size: 12px;
     }
 
     .map {
-        height: 200px; /* Reducir aún más el tamaño del mapa */
+        height: 200px; /
     }
 }

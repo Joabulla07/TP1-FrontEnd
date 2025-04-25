@@ -35,15 +35,6 @@
 
 /* Formulario */
 
-/*form{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    height: 100%;*/
-/*    color: white;*/
-/*}*/
-
 
 .login-form {
     text-align: center;
@@ -117,44 +108,99 @@
 
 /* Responsive Design */
 
-/* Para pantallas de hasta 1024px */
+/* Breakpoint para 1024px */
 @media (max-width: 1024px) {
     .login-container {
         grid-template-columns: 1fr;
     }
 
-    .carousel-images img {
-        height: 500px;
-    }
-}
-
-/* Para pantallas de hasta 768px */
-@media (max-width: 768px) {
-    .carousel-images img {
-        height: 400px;
-    }
-
-    .prev, .next {
-        padding: 8px;
-    }
-}
-
-/* Para pantallas de hasta 360px */
-@media (max-width: 360px) {
-    .login-container {
-        padding: 10px;
-    }
-
-    .carousel-images img {
-        height: 250px;
-    }
-
-    .prev, .next {
-        padding: 5px;
-        font-size: 12px;
+    .carousel-item img {
+        height: 450px;
     }
 
     .login-form {
+        font-size: 25px;
+    }
+
+    .login-form input {
+        width: 70%;
+        padding: 8px;
+    }
+
+    .login-form a.fb,
+    .login-form a.google {
+        padding: 12px 25px 12px 40px;
+        font-size: 13px;
+    }
+}
+
+/* Breakpoint para 768px (Tablets) */
+@media (max-width: 768px) {
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .login-form {
+        font-size: 20px;
         padding: 20px;
+    }
+
+    .login-form input {
+        width: 80%;
+    }
+
+    .login-form ul {
+        flex-direction: column;
+    }
+
+    .login-form a.fb,
+    .login-form a.google {
+        width: 80%;
+        font-size: 12px;
+    }
+}
+
+/* Breakpoint para 360px (Smartphones pequeños) */
+@media (max-width: 360px) {
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .login-form {
+        font-size: 16px;
+    }
+
+    .login-form input {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .login-form a.fb,
+    .login-form a.google {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .login-form ul {
+        flex-direction: column;
+        width: 100%;
     }
 }
